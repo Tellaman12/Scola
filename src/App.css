@@ -758,20 +758,32 @@ code {
   letter-spacing: 0.5px;
 }
 
+/* Prevent zoom and ensure responsive design */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea, select {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
-  .dashboard-body {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .dashboard-header {
+    padding: 15px 20px;
   }
   
-  .sidebar {
-    width: 100%;
-    padding: 10px 0;
-  }
-  
-  .nav-btn {
-    padding: 12px 15px;
-    font-size: 14px;
+  .dashboard-title h1 {
+    font-size: 20px;
   }
   
   .main-content {
@@ -779,7 +791,62 @@ code {
   }
   
   .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-body {
+    flex-direction: column;
+    max-height: none;
+  }
+  
+  .sidebar {
+    width: 100%;
+    padding: 10px 0;
+    order: 2;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .nav-btn {
+    padding: 12px 15px;
+    font-size: 14px;
+    display: inline-block;
+    width: auto;
+    margin: 2px;
+    border-radius: 8px;
+    border-left: none;
+  }
+  
+  .main-content {
+    padding: 15px;
+    order: 1;
+    max-height: none;
+    overflow-y: visible;
+  }
+  
+  .content-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .stats-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .stat-card {
+    padding: 16px;
+  }
+  
+  .stat-value {
+    font-size: 28px;
   }
   
   .chat-main {
@@ -789,6 +856,8 @@ code {
   
   .chat-sidebar {
     order: 2;
+    max-height: 150px;
+    overflow-y: auto;
   }
   
   .chat-window {
@@ -819,5 +888,170 @@ code {
   
   .stats-grid-quiz {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .auth-card {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  
+  .auth-header h1 {
+    font-size: 24px;
+  }
+  
+  .form-group input, .form-group select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+  
+  .dashboard-title {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .user-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .dashboard-title h1 {
+    font-size: 18px;
+  }
+  
+  .main-content {
+    padding: 10px;
+  }
+  
+  .content-section h2 {
+    font-size: 20px;
+  }
+  
+  .card {
+    padding: 12px;
+  }
+  
+  .stat-card {
+    padding: 12px;
+  }
+  
+  .stat-value {
+    font-size: 24px;
+  }
+  
+  .quiz-card {
+    padding: 20px;
+  }
+  
+  .quiz-question {
+    font-size: 16px;
+  }
+  
+  .quiz-option {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .subject-card {
+    padding: 12px;
+  }
+  
+  .subject-icon {
+    font-size: 24px;
+  }
+  
+  .subject-name {
+    font-size: 16px;
+  }
+  
+  .stats-grid-quiz {
+    grid-template-columns: 1fr;
+  }
+  
+  .auth-card {
+    padding: 20px 15px;
+  }
+  
+  .auth-header h1 {
+    font-size: 20px;
+  }
+  
+  .nav-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .message-input {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .message-input input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .modal-content {
+    padding: 16px;
+    margin: 10px;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .dashboard-body {
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    width: 200px;
+    order: 1;
+    max-height: 100vh;
+  }
+  
+  .main-content {
+    order: 2;
+    padding: 15px;
+  }
+  
+  .nav-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .chat-window {
+    height: 300px;
+  }
+  
+  .quiz-card {
+    padding: 20px;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .dashboard-title img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .user-avatar {
+    width: 32px;
+    height: 32px;
   }
 }
