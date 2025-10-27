@@ -1,0 +1,17 @@
+studentName,studentNumber,subject,topic,score,grade,term,year
+Alice Johnson,STU001,Mathematics,Algebra,45,Grade 10,Term 1,2024
+Alice Johnson,STU001,Mathematics,Geometry,52,Grade 10,Term 1,2024
+Alice Johnson,STU001,Science,Physics,48,Grade 10,Term 1,2024
+Alice Johnson,STU001,English,Literature,85,Grade 10,Term 1,2024
+Bob Smith,STU002,Mathematics,Algebra,88,Grade 10,Term 1,2024
+Bob Smith,STU002,Mathematics,Geometry,92,Grade 10,Term 1,2024
+Bob Smith,STU002,Science,Physics,90,Grade 10,Term 1,2024
+Bob Smith,STU002,English,Literature,78,Grade 10,Term 1,2024
+Charlie Brown,STU003,Mathematics,Algebra,82,Grade 10,Term 1,2024
+Charlie Brown,STU003,Mathematics,Geometry,85,Grade 10,Term 1,2024
+Charlie Brown,STU003,Science,Physics,88,Grade 10,Term 1,2024
+Charlie Brown,STU003,English,Literature,91,Grade 10,Term 1,2024
+David Lee,STU004,Geography,Physical Geography,42,Grade 10,Term 1,2024
+David Lee,STU004,Geography,Human Geography,38,Grade 10,Term 1,2024
+David Lee,STU004,Mathematics,Algebra,35,Grade 10,Term 1,2024
+David Lee,STU004,Science,Chemistry,47,Grade 10,Term 1,2024

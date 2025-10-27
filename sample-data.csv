@@ -1,0 +1,16 @@
+studentName,studentNumber,subject,topic,score,grade,term,year,date
+Alice Johnson,STU001,Mathematics,Algebra,85,Grade 10,Term 1,2024,2024-03-15
+Bob Smith,STU002,Mathematics,Algebra,72,Grade 10,Term 1,2024,2024-03-15
+Carol Davis,STU003,Mathematics,Algebra,91,Grade 10,Term 1,2024,2024-03-15
+David Wilson,STU004,Mathematics,Algebra,45,Grade 10,Term 1,2024,2024-03-15
+Eve Brown,STU005,Mathematics,Algebra,78,Grade 10,Term 1,2024,2024-03-15
+Alice Johnson,STU001,Physics,Mechanics,88,Grade 10,Term 1,2024,2024-03-16
+Bob Smith,STU002,Physics,Mechanics,65,Grade 10,Term 1,2024,2024-03-16
+Carol Davis,STU003,Physics,Mechanics,92,Grade 10,Term 1,2024,2024-03-16
+David Wilson,STU004,Physics,Mechanics,38,Grade 10,Term 1,2024,2024-03-16
+Eve Brown,STU005,Physics,Mechanics,81,Grade 10,Term 1,2024,2024-03-16
+Alice Johnson,STU001,English,Literature,79,Grade 10,Term 1,2024,2024-03-17
+Bob Smith,STU002,English,Literature,84,Grade 10,Term 1,2024,2024-03-17
+Carol Davis,STU003,English,Literature,95,Grade 10,Term 1,2024,2024-03-17
+David Wilson,STU004,English,Literature,52,Grade 10,Term 1,2024,2024-03-17
+Eve Brown,STU005,English,Literature,76,Grade 10,Term 1,2024,2024-03-17
